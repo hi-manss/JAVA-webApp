@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *************** -->
+    <!-- META DESCRIPTION -->
+    <!-- *************** -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="DSCE Login is a  website for students and professors to login the potal"
+    />
+    <meta name="theme-color" content="#000" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- *************** -->
+    <!-- TAB ICON -->
+    <!-- *************** -->
+    <link rel="icon" href="img/tab-icon.webp" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.webp" />
+
+    <!-- *************** -->
+    <!-- FONTS -->
+    <!-- *************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *************** -->
+    <!-- CSS -->
+    <!-- *************** -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- *************** -->
+    <!-- JAVASCRIPT -->
+    <!-- *************** -->
+    <script defer src="js/script.js"></script>
+
+    <title>DSCE Portal</title>
+  </head>
+  <body>
+    <!-- *************** -->
+    <!-- CONTAINER -->
+    <!-- *************** -->
+    <div class="container grid grid--2-cols-login">
+      <!-- *************** -->
+      <!-- SLIDER -->
+      <!-- *************** -->
+      <section class="container-img">
+        <div class="slider">
+          <img src="img/dscelogo.webp" alt="logo" class="slider-logo" />
+          <div class="slide"><img src="img/img-1.webp" alt="Photo 1" /></div>
+          <div class="slide"><img src="img/img-2.webp" alt="Photo 2" /></div>
+          <div class="slide"><img src="img/img-3.webp" alt="Photo 3" /></div>
+          <div class="slide"><img src="img/img-4.webp" alt="Photo 4" /></div>
+          <div class="slide"><img src="img/img-5.webp" alt="Photo 5" /></div>
+          <div class="slide"><img src="img/img-6.webp" alt="Photo 6" /></div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <!-- *************** -->
+      <!-- LOGIN PAGE -->
+      <!-- *************** -->
+      <section class="container-login">
+        <img src="img/logo.webp" alt="logo" class="login-logo" />
+        <div class="login-center">
+          <form method="post" name="login" action="login">
+            <div class="login-field">
+              <input type="email" required name="email" />
+              <!-- <span></span> -->
+              <label>Username</label>
+            </div>
+            <div class="login-field">
+              <input type="password" required name="pass" />
+              <!-- <span></span> -->
+              <label>Password</label>
+            </div>
+            <button class="login-pass" name="forget-login">
+              Forgot Password?
+            </button>
+            <button type="submit" class="login-submit" name="submit-login">
+              Login
+            </button>
+            <!-- <input type="submit" value="Login" /> -->
+            <!-- <div class="signup_link">Not a member? <a href="#">Signup</a></div> -->
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

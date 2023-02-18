@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *************** -->
+    <!-- META DESCRIPTION -->
+    <!-- *************** -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="DSCE Portal is website for professors to add the marks for each student"
+    />
+    <meta name="theme-color" content="#000" />
+
+    <!-- *************** -->
+    <!-- TAB ICON -->
+    <!-- *************** -->
+    <link rel="icon" href="../img/tab-icon.webp" />
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.webp" />
+
+    <!-- *************** -->
+    <!-- FONTS -->
+    <!-- *************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *************** -->
+    <!-- ICONS -->
+    <!-- *************** -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- *************** -->
+    <!-- CSS -->
+    <!-- *************** -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <!-- *************** -->
+    <!-- JAVASCRIPT -->
+    <!-- *************** -->
+    <script defer src="../js/marks.js"></script>
+
+    <title>DSCE Portal</title>
+  </head>
+  <body class="sticky">
+    <!-- *************** -->
+    <!-- CONTAINER -->
+    <!-- *************** -->
+    <div class="regis">
+      <!-- *************** -->
+      <!-- NAVIGATION -->
+      <!-- *************** -->
+      <header class="header">
+        <nav class="regis-nav">
+          <a href="#" class="nav-logo_link nav-about"
+            ><img src="../img/dscelogo.webp" alt="logo" class="regis-logo"
+          /></a>
+          <div class="regis-nav_field">
+            <ul class="main-nav-list">
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-about">About</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-regis">Marks Entry</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-result">Result</a>
+              </li>
+              <li class="main-nav-link">
+                <a
+                  href="#"
+                  rel="logout"
+                  class="nav-link nav-logout"
+                  name="logout"
+                  >Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </nav>
+      </header>
+
+      <!-- *************** -->
+      <!-- ABOUT -->
+      <!-- *************** -->
+      <section class="regis-container regis-about">
+        <h1 class="primary-heading about-header">About DSCE</h1>
+        <div class="about">
+          <p class="about-des des-1">
+            Dayananda Sagar College of Engineering is approved by All India
+            Council for Technical Education (AICTE), Govt. of India and
+            affiliated to Visvesvaraya Technological University. It has widest
+            choice of engineering branches having 18 Under Graduate courses & 13
+            Post Graduate courses. In addition, it has 20 Research Centres in
+            different branches of Engineering catering to research scholars for
+            obtaining Ph.D under VTU. Various courses are accredited by NBA.
+          </p>
+          <p class="about-des des-2">
+            The Institute is spread over 23 acres of land with large
+            infrastructure supported by laboratories with state-of-the-art,
+            Equipment & Machines. The Central Library with modern facilities and
+            the Digital Library provides the knowledge base for the students.
+          </p>
+
+          <p class="about-des des-3">
+            The campus is WI-FI equipped with large bandwidth internet facility.
+            The College has good faculty strength with highest professional
+            integrity and committed to the academics with transparency in their
+            actions. Each faculty takes the responsibility of mentoring a
+            certain number of students’ through personal attention paving the
+            way for the students’ professional growth. The faculty are research
+            oriented having number of sponsored R & D projects from different
+            agencies such as Department of Science & Technology, Defense R & D
+            organizations, Indian Space Research Organization, AICTE etc..
+          </p>
+        </div>
+        <div class="about-grid grid grid--2-cols">
+          <div class="vision">
+            <h2 class="secondary-heading vision-title">Vision</h2>
+            <ul class="unlist">
+              <li class="list vision-list">
+                To impart quality technical education with a focus on Research
+                and Innovation emphasising on Development of Sustainable and
+                Inclusive Technology for the benefit of society.
+              </li>
+            </ul>
+          </div>
+          <div class="mission">
+            <h2 class="secondary-heading mission-title">Mission</h2>
+            <ul class="unlist">
+              <li class="list mission-list">
+                To provide an environment that enhances creativity and
+                Innovation in pursuit of Excellence.
+              </li>
+              <li class="list mission-list">
+                To nurture teamwork in order to transform individuals as
+                responsible leaders and entrepreneurs.
+              </li>
+              <li class="list mission-list">
+                To train the students to the changing technical scenario and
+                make them to understand the importance of Sustainable and
+                Inclusive technologies.
+              </li>
+            </ul>
+          </div>
+          <div class="highlight">
+            <h2 class="secondary-heading highlight-title">Highlights</h2>
+            <ul class="unlist">
+              <li class="list high-list">
+                Total 20 Research Centers are recognized by Visvesvaraya
+                Technological University (VTU) and 116 faculty members have
+                registered for Ph.D program.
+              </li>
+              <li class="list high-list">
+                Students of the Institution secured the highest grades and ranks
+                every year
+              </li>
+              <li class="list high-list">
+                Rupees 04 crores research funding received from leading
+                organizations like ISRO, DST, DBT, DRDO.
+              </li>
+              <li class="list high-list">
+                Received A National Mission Project from Department of Science
+                and Technology to implement “Indigenous Magnetic Resonance
+                Imaging (IMRI).
+              </li>
+              <li class="list high-list">
+                Institution is recognized by DSIR – Department of Scientific and
+                Industrial Research.
+              </li>
+              <li class="list high-list">
+                Signed MoU's with leading Research Organizations & Industries
+              </li>
+              <li class="list high-list">
+                Professional society activities and student clubs in all
+                departments to strengthen Industry-Institute interactions.
+              </li>
+              <li class="list high-list">
+                National level & International level Seminars, Workshops &
+                Faculty Development Programmes conducted
+              </li>
+              <li class="list high-list">
+                Faculty & students published more than 650+ Journals/Conference
+                Papers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- *************** -->
+      <!-- MARKS ENTRY -->
+      <!-- *************** -->
+      <section class="regis-container regis-marks hidden">
+        <h1 class="primary-heading marks-header">Marks Entry</h1>
+        <form method="post" action="marks" name="marks">
+          <div class="result-input">
+            <div class="input-field search-field">
+              <label>Select Semister</label>
+              <select name="sem" class="sem" required>
+                <option value="" selected>Select Sem</option>
+                <option value="sem-1">Sem-1</option>
+                <option value="sem-2">Sem-2</option>
+                <option value="sem-3">Sem-3</option>
+              </select>
+            </div>
+            <div class="input-field search-field">
+              <label>Student USN</label>
+              <input
+                type="text"
+                placeholder="Enter Student USN"
+                name="marks-usn"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="sem-1 hidden">
+            <div class="form form-1">
+              <h2 class="secondary-heading form-title">Maths-1</h2>
+              <div class="fields grid grid--4-cols fileds-maths_1">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="maths_1-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="maths_1-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="maths_1-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="maths_1-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Engineering Physics</h2>
+              <div class="fields grid grid--4-cols fileds-physics">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="physics-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="physics-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="physics-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="physics-credit"
+                    required
+                  />
+                </div>
+              </div>
+
+              <h2 class="secondary-heading form-title">
+                Basic Electrical Engineering
+              </h2>
+              <div class="fields grid grid--4-cols fileds-electrical">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="electrical-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="electrical-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="electrical-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="electrical-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Civil Engineering</h2>
+              <div class="fields grid grid--4-cols fileds-civil">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="civil-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="civil-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="civil-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="civil-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Mechanical Engineering
+              </h2>
+              <div class="fields grid grid--4-cols fileds-mechanical">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="mechanical-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="mechanical-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="mechanical-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="mechanical-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Physics Laboratory</h2>
+              <div class="fields grid grid--4-cols fileds-physics_lab">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="physics_lab-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="physics_lab-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="physics_lab-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="physics_lab-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Mechanical Laboratory
+              </h2>
+              <div class="fields grid grid--4-cols fileds-mechanical_lab">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="mechanical_lab-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="mechanical_lab-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="mechanical_lab-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="mechanical_lab-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Technical English-1</h2>
+              <div class="fields grid grid--4-cols fileds-english_1">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="english_1-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="english_1-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="english_1-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="english_1-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Indian Education System
+              </h2>
+              <div class="fields grid grid--4-cols fileds-ies">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="ies-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="ies-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="ies-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="ies-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Mini Project</h2>
+              <div class="fields grid grid--4-cols fileds-mini_1">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="mini_1-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="mini_1-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="mini_1-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="mini_1-credit"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sem-2 hidden">
+            <div class="form form-2">
+              <h2 class="secondary-heading form-title">Maths-2</h2>
+              <div class="fields grid grid--4-cols fileds-maths_2">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="maths_2-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="maths_2-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="maths_2-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="maths_2-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Engineering Chemistry
+              </h2>
+              <div class="fields grid grid--4-cols fileds-chemistry">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="chemistry-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="chemistry-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="chemistry-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="chemistry-credit"
+                    required
+                  />
+                </div>
+              </div>
+
+              <h2 class="secondary-heading form-title">C Programming</h2>
+              <div class="fields grid grid--4-cols fileds-cp">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="cp-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="cp-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="cp-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="cp-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">CAED</h2>
+              <div class="fields grid grid--4-cols fileds-cad">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="cad-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="cad-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="cad-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="cad-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Basic Electronics</h2>
+              <div class="fields grid grid--4-cols fileds-electronics">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="electronics-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="electronics-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="electronics-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="electronics-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Chemistry Laboratory</h2>
+              <div class="fields grid grid--4-cols fileds-chemistry_lab">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="chemistry_lab-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="chemistry_lab-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="chemistry_lab-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="chemistry_lab-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                C Programming Laboratory
+              </h2>
+              <div class="fields grid grid--4-cols fileds-c_lab">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="c_lab-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="c_lab-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="c_lab-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="c_lab-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">English-2</h2>
+              <div class="fields grid grid--4-cols fileds-english_2">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="english_2-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="english_2-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="english_2-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="english_2-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Rural Development</h2>
+              <div class="fields grid grid--4-cols fileds-rdp">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="rdp-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="rdp-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="rdp-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="rdp-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Mini Project</h2>
+              <div class="fields grid grid--4-cols fileds-mini_2">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="mini_2-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="mini_2-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="mini_2-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="mini_2-credit"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sem-3 hidden">
+            <div class="form form-3">
+              <h2 class="secondary-heading form-title">Math-3</h2>
+              <div class="fields grid grid--4-cols fileds-maths_3">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="maths_3-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="maths_3-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="maths_3-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="maths_3-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">OOPS with JAVA</h2>
+              <div class="fields grid grid--4-cols fileds-java">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="java-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="java-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="java-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="java-credit"
+                    required
+                  />
+                </div>
+              </div>
+
+              <h2 class="secondary-heading form-title">
+                Computer Organization
+              </h2>
+              <div class="fields grid grid--4-cols fileds-co">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="co-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="co-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="co-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="co-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Data Structures</h2>
+              <div class="fields grid grid--4-cols fileds-ds">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="ds-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="ds-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="ds-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="ds-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Data Structures Laboratory
+              </h2>
+              <div class="fields grid grid--4-cols fileds-ds_lab">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="ds_lab-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="ds_lab-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="ds_lab-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="ds_lab-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Social Connect</h2>
+              <div class="fields grid grid--4-cols fileds-uvh">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="uvh-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="uvh-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="uvh-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="uvh-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">
+                Constitution of India
+              </h2>
+              <div class="fields grid grid--4-cols fileds-cip">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="cip-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="cip-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="cip-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="cip-credit"
+                    required
+                  />
+                </div>
+              </div>
+              <h2 class="secondary-heading form-title">Ability Enhancement</h2>
+              <div class="fields grid grid--4-cols fileds-rpa">
+                <div class="input-field">
+                  <label>Course Code</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Course Code"
+                    name="rpa-code"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Max Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Max Marks"
+                    name="rpa-max"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Obtained Marks</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Obtained Marks"
+                    name="rpa-obtained"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Credits</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Credits"
+                    name="rpa-credit"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-center">
+            <button class="btn btn-submit" type="submit" name="marks-submit">
+              <span class="btnText">Submit</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+
+            <button class="btn btn-reset" type="reset">
+              <span class="btnText">Reset</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- *************** -->
+      <!-- RESULT -->
+      <!-- *************** -->
+      <section class="regis-container regis-result hidden">
+        <h1 class="primary-heading result-header">Result</h1>
+        <form method="post" action="result" name="result">
+          <div class="result-input">
+            <div class="input-field search-field">
+              <label>Select Semister</label>
+              <select name="result-sem" class="sem" required>
+                <option value="" selected>Select Sem</option>
+                <option value="sem-1">Sem-1</option>
+                <option value="sem-2">Sem-2</option>
+                <option value="sem-3">Sem-3</option>
+              </select>
+            </div>
+            <div class="input-field search-field">
+              <label>USN Number</label>
+              <input
+                type="text"
+                placeholder="Enter USN"
+                name="result-usn"
+                required
+              />
+            </div>
+
+            <button
+              class="btn btn-submit result-btn"
+              type="submit"
+              name="result-submit"
+            >
+              <span class="btnText">Submit</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- *************** -->
+      <!-- FOOTER -->
+      <!-- *************** -->
+      <footer class="footer">
+        <div class="grid grid--4-cols footer-grid">
+          <div class="logo-col">
+            <a href="#" class="nav-about"
+              ><img src="../img/dscelogo.webp" alt="logo" class="footer-logo"
+            /></a>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.instagram.com/dsce.official/?hl=en"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.facebook.com/dsceofficial/"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://mobile.twitter.com/dsubangalore"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.linkedin.com/school/dayananda-sagar-college-of-engineering-bangalore/"
+                  ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; <span class="year">2023</span> by DSCE,<br />
+              All rights reserved.
+            </p>
+          </div>
+
+          <nav class="nav-col footer-us">
+            <p class="footer-heading">About Us</p>
+            <ul class="footer-nav">
+              <li>
+                <p class="nav-about footer-about">
+                  An Autonomous Institute affiliated to VTU, approved by AICTE &
+                  UGC
+                </p>
+              </li>
+              <li>
+                <p class="nav-regis footer-about">
+                  Accredited by NBA & NAAC with 'A' grade.
+                </p>
+              </li>
+              <li>
+                <p class="nav-notes footer-about">
+                  <span>CET CODE:</span> E007 | <span>COMED-K CODE:</span> E040
+                </p>
+              </li>
+              <li>
+                <p class="nav-result footer-about">
+                  <span>PGCET - MBA:</span> B158 | <span>M.TECH:</span> T822
+                </p>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col footer-use">
+            <p class="footer-heading">Links</p>
+            <ul class="footer-nav">
+              <li><a href="#" class="nav-about footer-link">About</a></li>
+              <li>
+                <a href="#" class="nav-regis footer-link">Marks Entry</a>
+              </li>
+              <li><a href="#" class="nav-result footer-link">Result</a></li>
+            </ul>
+          </nav>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contact">
+              <p class="address">
+                Shavige Malleshwara Hills, 91st Main Rd, 1st Stage, Kumaraswamy
+                Layout, Bengaluru, Karnataka 560078
+              </p>
+              <a class="footer-link mail" href="tel:080 4216 1750"
+                >080 4216 1750</a
+              ><br />
+              <a
+                class="footer-link mail"
+                href="mailto:admissions@dayanandasagar.edu"
+                >admissions@dayanandasagar.edu</a
+              >
+            </address>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *************** -->
+    <!-- META DESCRIPTION -->
+    <!-- *************** -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="DSCE Portal is website for student to register their details, to download the notes and to check the results"
+    />
+    <meta name="theme-color" content="#000" />
+
+    <!-- *************** -->
+    <!-- TAB ICON -->
+    <!-- *************** -->
+    <link rel="icon" href="../img/tab-icon.webp" />
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.webp" />
+
+    <!-- *************** -->
+    <!-- FONTS -->
+    <!-- *************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *************** -->
+    <!-- ICONS -->
+    <!-- *************** -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- *************** -->
+    <!-- CSS -->
+    <!-- *************** -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- *************** -->
+    <!-- JAVASCRIPT LINK-->
+    <!-- *************** -->
+    <script defer src="../js/form.js"></script>
+
+    <title>DSCE Portal</title>
+  </head>
+  <body class="sticky">
+    <!-- *************** -->
+    <!-- CONTAINER -->
+    <!-- *************** -->
+    <div class="regis">
+      <!-- *************** -->
+      <!-- NAVIGATION -->
+      <!-- *************** -->
+      <header class="header">
+        <nav class="regis-nav">
+          <a href="#" class="nav-logo_link nav-about"
+            ><img src="../img/dscelogo.webp" alt="logo" class="regis-logo"
+          /></a>
+          <div class="regis-nav_field">
+            <ul class="main-nav-list">
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-about">About</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-regis">Registration</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-notes">Notes</a>
+              </li>
+              <li class="main-nav-link">
+                <a href="#" class="nav-link nav-result">Result</a>
+              </li>
+              <li class="main-nav-link">
+                <a
+                  href="#"
+                  rel="logout"
+                  class="nav-link nav-logout"
+                  name="logout"
+                  >Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </nav>
+      </header>
+
+      <!-- *************** -->
+      <!-- ABOUT -->
+      <!-- *************** -->
+      <section class="regis-container regis-about">
+        <h1 class="primary-heading about-header">About DSCE</h1>
+        <div class="about">
+          <p class="about-des des-1">
+            Dayananda Sagar College of Engineering is approved by All India
+            Council for Technical Education (AICTE), Govt. of India and
+            affiliated to Visvesvaraya Technological University. It has widest
+            choice of engineering branches having 18 Under Graduate courses & 13
+            Post Graduate courses. In addition, it has 20 Research Centres in
+            different branches of Engineering catering to research scholars for
+            obtaining Ph.D under VTU. Various courses are accredited by NBA.
+          </p>
+          <p class="about-des des-2">
+            The Institute is spread over 23 acres of land with large
+            infrastructure supported by laboratories with state-of-the-art,
+            Equipment & Machines. The Central Library with modern facilities and
+            the Digital Library provides the knowledge base for the students.
+          </p>
+
+          <p class="about-des des-3">
+            The campus is WI-FI equipped with large bandwidth internet facility.
+            The College has good faculty strength with highest professional
+            integrity and committed to the academics with transparency in their
+            actions. Each faculty takes the responsibility of mentoring a
+            certain number of students’ through personal attention paving the
+            way for the students’ professional growth. The faculty are research
+            oriented having number of sponsored R & D projects from different
+            agencies such as Department of Science & Technology, Defense R & D
+            organizations, Indian Space Research Organization, AICTE etc..
+          </p>
+        </div>
+        <div class="about-grid grid grid--2-cols">
+          <div class="vision">
+            <h2 class="secondary-heading vision-title">Vision</h2>
+            <ul class="unlist">
+              <li class="list vision-list">
+                To impart quality technical education with a focus on Research
+                and Innovation emphasising on Development of Sustainable and
+                Inclusive Technology for the benefit of society.
+              </li>
+            </ul>
+          </div>
+          <div class="mission">
+            <h2 class="secondary-heading mission-title">Mission</h2>
+            <ul class="unlist">
+              <li class="list mission-list">
+                To provide an environment that enhances creativity and
+                Innovation in pursuit of Excellence.
+              </li>
+              <li class="list mission-list">
+                To nurture teamwork in order to transform individuals as
+                responsible leaders and entrepreneurs.
+              </li>
+              <li class="list mission-list">
+                To train the students to the changing technical scenario and
+                make them to understand the importance of Sustainable and
+                Inclusive technologies.
+              </li>
+            </ul>
+          </div>
+          <div class="highlight">
+            <h2 class="secondary-heading highlight-title">Highlights</h2>
+            <ul class="unlist">
+              <li class="list high-list">
+                Total 20 Research Centers are recognized by Visvesvaraya
+                Technological University (VTU) and 116 faculty members have
+                registered for Ph.D program.
+              </li>
+              <li class="list high-list">
+                Students of the Institution secured the highest grades and ranks
+                every year
+              </li>
+              <li class="list high-list">
+                Rupees 04 crores research funding received from leading
+                organizations like ISRO, DST, DBT, DRDO.
+              </li>
+              <li class="list high-list">
+                Received A National Mission Project from Department of Science
+                and Technology to implement “Indigenous Magnetic Resonance
+                Imaging (IMRI).
+              </li>
+              <li class="list high-list">
+                Institution is recognized by DSIR – Department of Scientific and
+                Industrial Research.
+              </li>
+              <li class="list high-list">
+                Signed MoU's with leading Research Organizations & Industries
+              </li>
+              <li class="list high-list">
+                Professional society activities and student clubs in all
+                departments to strengthen Industry-Institute interactions.
+              </li>
+              <li class="list high-list">
+                National level & International level Seminars, Workshops &
+                Faculty Development Programmes conducted
+              </li>
+              <li class="list high-list">
+                Faculty & students published more than 650+ Journals/Conference
+                Papers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- *************** -->
+      <!-- REGISTRATION -->
+      <!-- *************** -->
+      <section class="regis-container regis-form hidden">
+        <h1 class="primary-heading form-header">Registration</h1>
+        <form method="post" action="input" name="input">
+          <div class="form form-1">
+            <h2 class="secondary-heading form-title">Personal Details</h2>
+            <div class="fields grid grid--3-cols fileds-1">
+              <div class="input-field">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>USN</label>
+                <input
+                  type="text"
+                  placeholder="Enter your USN"
+                  name="usn"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Date of Birth</label>
+                <input
+                  type="date"
+                  placeholder="Enter birth date"
+                  name="dob"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Mobile Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter mobile number"
+                  name="mob-number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select required name="gender">
+                  <option disabled selected>Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Father Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter father name"
+                  name="father-name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Mother Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter mother name"
+                  name="mother-name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Address</label>
+                <input
+                  type="text"
+                  placeholder="Enter your address"
+                  class="input-field_address"
+                  name="address"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Nationality</label>
+                <input
+                  type="text"
+                  placeholder="Enter nationality"
+                  name="nationality"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>State</label>
+                <input
+                  type="text"
+                  placeholder="Enter your state"
+                  name="state"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>District</label>
+                <input
+                  type="text"
+                  placeholder="Enter your district"
+                  name="district"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form form-2">
+            <h2 class="secondary-heading form-title">Academic Details</h2>
+            <div class="fields grid grid--4-cols fields-2">
+              <div class="input-field">
+                <label>10th Board</label>
+                <select name="10-board" required>
+                  <option disabled selected>Select Board</option>
+                  <option>State Board</option>
+                  <option>CBSE</option>
+                  <option>ICSE</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>10th Register Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter register number"
+                  name="10-regis"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>10th Max Marks</label>
+                <input
+                  type="number"
+                  placeholder="Enter 10th Max Marks"
+                  name="10-max"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>10th Obtained Marks</label>
+                <input
+                  type="number"
+                  placeholder="Enter Obtained Marks"
+                  name="10-obtained"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>12th Board</label>
+                <select name="12-board" required>
+                  <option disabled selected>Select Board</option>
+                  <option>State Board</option>
+                  <option>CBSE</option>
+                  <option>ICSE</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>12th Register Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter register number"
+                  name="12-regis"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>12th Max Marks</label>
+                <input
+                  type="number"
+                  placeholder="Enter Max Marks"
+                  name="12-max"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>12th Obtained Marks</label>
+                <input
+                  type="number"
+                  placeholder="Enter Obtained Marks"
+                  name="12-obtained"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Admission through</label>
+                <select name="admission" required>
+                  <option disabled selected>Select Admission</option>
+                  <option>K-CET</option>
+                  <option>COMED-K</option>
+                  <option>MANAGEMENT</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Admission Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter Admission number"
+                  name="admission-number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>KCET or COMEDK Rank</label>
+                <input
+                  type="number"
+                  placeholder="Enter Rank"
+                  name="ce-rank"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Branch</label>
+                <select required name="branch">
+                  <option disabled selected>Select Branch</option>
+                  <option>Artificial Intelligence & Machine Learning</option>
+                  <option>Aeronautical Engineering</option>
+                  <option>Automobile Engineering</option>
+                  <option>Biotechnology</option>
+                  <option>Chemical Engineering</option>
+                  <option>Civil Engineering</option>
+                  <option>Computer Science and Engineering</option>
+                  <option>Computer Science and Business Systems</option>
+                  <option>Computer Science (Cyber Security)</option>
+                  <option>Computer Science (Data Science)</option>
+                  <option>Computer Science and Design</option>
+                  <option>Electrical & Electronics Engineering</option>
+                  <option>Electronics & Communication Engineering</option>
+                  <option>Electronics & Instrumentation Engineering</option>
+                  <option>Electronics & Telecommunication Engineering</option>
+                  <option>Information Science & Engineering</option>
+                  <option>Mechanical Engineering</option>
+                  <option>Medical Electronics Engineering</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="submit-center">
+            <button class="btn btn-submit" type="submit" name="regis-submit">
+              <span class="btnText">Submit</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+
+            <button class="btn btn-reset" type="reset">
+              <span class="btnText">Reset</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- *************** -->
+      <!-- NOTES -->
+      <!-- *************** -->
+      <section class="regis-container regis-notes hidden">
+        <h1 class="primary-heading notes-header">Notes</h1>
+        <div class="input-field search-field_notes">
+          <label>Select Semister</label>
+          <select name="sem" class="sem" required>
+            <option value="" selected>Select Sem</option>
+            <option value="sem-1">Sem-1</option>
+            <option value="sem-2">Sem-2</option>
+            <option value="sem-3">Sem-3</option>
+          </select>
+        </div>
+        <div class="sem-1 hidden">
+          <div class="notes-sem notes-maths">
+            <h2 class="secondary-heading notes-title">Maths</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1yQy1NUM-koor2we73cESWRus4bksU94S/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1yTbjkZuVqesN3hwUiUiJ6M9sG4JSytQV/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1SJV-X0rZ-E_hoODBXZKKb5oF-hlPVUh7/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1-NoRUVUX_xwvY7uNuOao2H5ynpi0CNBk/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1IeDd-GVHc-4Oz12_W_JoXLEgCzXHXjSz/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-physics">
+            <h2 class="secondary-heading notes-title">Physics</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1ANLbP0j_FX8gEaLwcDUQUlEf30SNPpRf"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1Adomp5vT-fP7cKtKOnROgvyI-SqbYBfj"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1PCvVGx0BBvAOIccSgl1Mx0f_HWgOC7Z9/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1lsAx97cKZ4EMzy2bJguHNARfno4GKzyi/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1AUZ066SE3d401TrAmA-tX_BjAbTxywtl"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-electrical">
+            <h2 class="secondary-heading notes-title">Electrical</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1949Bu8mwwbqPZ8fnnzn9PlpIG3REgwgc"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=195UEhXN57hNDV5eKcgXvokroKAjAXuBL"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=10kmvaF3U4lQPcW3VfCa_P1ZDnNu48M1M"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1PGDfAMGb2IQKkWHobhi2OEAQW72C9bdL"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=17qyl5nKG9ynxGM7xPy60_0W_mCan7HN6"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-civil">
+            <h2 class="secondary-heading notes-title">Civil</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=18RgD2iJ5qgd56xPH9qIWP5VvxUdHbRpg"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=11QWXlKHEEQ6yh6cdgDJfmhi1jCaut17P"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=11IP-rmimFPS_ewkN6LtQ-8GqcnREAIh6"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=11MYMSrXAuOvs1T7JcQyu-GSCFcSDtdWr"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=11J2y7mOiocicQNypizhFXZn8mw6gnqqg"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-mech">
+            <h2 class="secondary-heading notes-title">Mechanical</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1rS-d4GBsKSZV9jSsR83iMKfn-YV57BCC/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>All Module</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sem-2 hidden">
+          <div class="notes-sem notes-pic">
+            <h2 class="secondary-heading notes-title">C Programming</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=12HrLN7cTFkKG-0MmvygiyAaIjZlhlTw8"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=12QwrAgVM1NzUndhzrbNKeJKG_YjBQNKY"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=19VDlWxcNSW2zTgV7XGpG8Trldbn0veSY"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=12HVVO9MrwocDFLj7IFsPSHzFB267o0zm"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=129cyin1Szj5qO8abbyANYa-jN4T6BFi9"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-maths">
+            <h2 class="secondary-heading notes-title">Maths</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1flCb01YSCIhFlztXfGpPzwl5Ec-TUwgH"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1cdp8A3-PrnKWBiYVDWv5_bh7Sn0bS4nc"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1l_oqFGQl065FyysZoHSwH11WCvQW-IMM"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1mQTgPefmYyUZQ4eR-lFpi8TZ466Y79Da"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1-BifINlSesix_r87p4-BjuonF5dOrWBD"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-chemistry">
+            <h2 class="secondary-heading notes-title">Chemistry</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1AC8ngpBiQsAGV-mEiWas8Zm4BTBRI1_R"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1AFwVsDmM9NZH3a06bETNF5kMZuzSmdKQ"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1A1XVP6YUDGcUwN6RaWPx8FnPXHglk3Ka"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1ACmW44kemjA6WaZA-QuYisUvfD9V0OSY"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=19llJKSD3tr5UWUcp2dOp179sNkzx2EV5"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-electronic">
+            <h2 class="secondary-heading notes-title">Electronics</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1ESSV66OuEJtGOzWRY7vmFSH8K28u8twx"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1E7pKy_ckqw9M8sPq4K0n5Nm9uRwZsKDl"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1EPhY2I1FtZZjW9rBr_WjFfywdmVuOW57"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1EC4Fia7xGN704eVJyf3FXmbIDVIlTpAC"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/uc?export=preview&id=1EIWwSDdTRgK-IRdB2WC9UOD6JTC6tXms"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-caed">
+            <h2 class="secondary-heading notes-title">CAED</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/viewer?a=v&pid=sites&srcid=Y21yaXQuYWMuaW58ZGluZXNoX2NhZWR8Z3g6MzFmMTBlNmUxNGJjZWZlZQ"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/viewer?a=v&pid=sites&srcid=Y21yaXQuYWMuaW58ZGluZXNoX2NhZWR8Z3g6NzA2YTU1OGRlMmEzOWQ0"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/viewer?a=v&pid=sites&srcid=Y21yaXQuYWMuaW58ZGluZXNoX2NhZWR8Z3g6ZTIxMmVkNTVlYjczY2Nk"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/viewer?a=v&pid=sites&srcid=Y21yaXQuYWMuaW58ZGluZXNoX2NhZWR8Z3g6MzkwNDEyZmRiOWM1NmE5Mg"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/viewer?a=v&pid=sites&srcid=Y21yaXQuYWMuaW58ZGluZXNoX2NhZWR8Z3g6NjM1MTliNmU0MGUxODk3Mg"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sem-3 hidden">
+          <div class="notes-sem notes-java">
+            <h2 class="secondary-heading notes-title">Java</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://docs.google.com/document/d/1ShU7ixwnuxtmF1ySAeGz3ukTQ8rV3na9/edit?usp=sharing&ouid=111115746322616165808&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1cvkd0uun-eb3o1yV_Dm-X9E3HfL54nGw/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1Ca_unh59zsYsFzeaHHxbN78QXcAbRLof/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1vhQMU8TSBSbZoO41nEqJ21HMhanLdCVD/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4&5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-ds">
+            <h2 class="secondary-heading notes-title">Data Structure</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1lrtK198UoQJAoj137DCHJhR9VrC4IRBm/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1YqATFyKTTUsEv86TmFZo968Ould8uG2R/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1Hp1Bbw132jgyqIbn0fDHeoXINBaNr6Lp/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1z-6UINCzRfa1Uq0_rdr03e3ex7MZhhxr/view?usp=sharing"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4&5</span></a
+                >
+              </div>
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1CI--Ny9D0u044F-u2MKR7Fv8XMVVG1OA/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-sem notes-maths">
+            <h2 class="secondary-heading notes-title">Maths</h2>
+            <div class="notes grid grid--5-cols">
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/19umCmFYGJCJRJ9amZ7s2UoUXQTXNf2Ao/view?usp=drive_web&authuser=1"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-1</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1Mzt6G-WSZzee37ieL0-SXpaNr9k1Z0p_/view?usp=share_link"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-2</span></a
+                >
+              </div>
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1uiNNJWDkHsZCfMtl7RseOliXOg1TyWO3/view?usp=drive_web&authuser=1"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-3</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/1TPcI7prE5O16JjUmvWydOnFhEsQmZxSX/view?usp=drive_web&authuser=1"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-4</span></a
+                >
+              </div>
+
+              <div class="notes-box">
+                <a
+                  href="https://drive.google.com/file/d/15Fwe1eCZUi5cQAUDF7uCcf9cVtEIR9Ru/view?usp=drive_web&authuser=1"
+                  target="_blank"
+                  rel="notes-pdf"
+                  class="notes-link"
+                  ><img
+                    src="../img/pdf-img.webp"
+                    alt="pdf"
+                    class="notes-img"
+                  /><span>Module-5</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- *************** -->
+      <!-- RESULT -->
+      <!-- *************** -->
+      <section class="regis-container regis-result hidden">
+        <h1 class="primary-heading result-header">Result</h1>
+        <form method="post" action="result" name="result">
+          <div class="result-input">
+            <div class="input-field search-field">
+              <label>Select Semister</label>
+              <select name="result-sem" class="sem" required>
+                <option value="" selected>Select Sem</option>
+                <option value="sem-1">Sem-1</option>
+                <option value="sem-2">Sem-2</option>
+                <option value="sem-3">Sem-3</option>
+              </select>
+            </div>
+
+            <div class="input-field search-field">
+              <label>USN Number</label>
+              <input
+                type="text"
+                placeholder="Enter USN"
+                name="result-usn"
+                required
+              />
+            </div>
+
+            <button class="btn btn-submit result-btn" type="submit" name="result-submit">
+              <span class="btnText">Submit</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- *************** -->
+      <!-- FOOTER -->
+      <!-- *************** -->
+      <footer class="footer">
+        <div class="grid grid--4-cols footer-grid">
+          <div class="logo-col">
+            <a href="#" class="nav-about"
+              ><img src="../img/dscelogo.webp" alt="logo" class="footer-logo"
+            /></a>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.instagram.com/dsce.official/?hl=en"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.facebook.com/dsceofficial/"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://mobile.twitter.com/dsubangalore"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.linkedin.com/school/dayananda-sagar-college-of-engineering-bangalore/"
+                  ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; <span class="year">2023</span> by DSCE,<br />
+              All rights reserved.
+            </p>
+          </div>
+
+          <nav class="nav-col footer-us">
+            <p class="footer-heading">About Us</p>
+            <ul class="footer-nav">
+              <li>
+                <p class="nav-about footer-about">
+                  An Autonomous Institute affiliated to VTU, approved by AICTE &
+                  UGC
+                </p>
+              </li>
+              <li>
+                <p class="nav-regis footer-about">
+                  Accredited by NBA & NAAC with 'A' grade.
+                </p>
+              </li>
+              <li>
+                <p class="nav-notes footer-about">
+                  <span>CET CODE:</span> E007 | <span>COMED-K CODE:</span> E040
+                </p>
+              </li>
+              <li>
+                <p class="nav-result footer-about">
+                  <span>PGCET - MBA:</span> B158 | <span>M.TECH:</span> T822
+                </p>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col footer-use">
+            <p class="footer-heading">Links</p>
+            <ul class="footer-nav">
+              <li><a href="#" class="nav-about footer-link">About</a></li>
+              <li>
+                <a href="#" class="nav-regis footer-link">Registration</a>
+              </li>
+              <li><a href="#" class="nav-notes footer-link">Notes</a></li>
+              <li><a href="#" class="nav-result footer-link">Result</a></li>
+            </ul>
+          </nav>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contact">
+              <p class="address">
+                Shavige Malleshwara Hills, 91st Main Rd, 1st Stage, Kumaraswamy
+                Layout, Bengaluru, Karnataka 560078
+              </p>
+              <a class="footer-link mail" href="tel:080 4216 1750"
+                >080 4216 1750</a
+              ><br />
+              <a
+                class="footer-link mail"
+                href="mailto:admissions@dayanandasagar.edu"
+                >admissions@dayanandasagar.edu</a
+              >
+            </address>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #4d4d4d;
+  scroll-behavior: smooth;
+  transition: 0.5s all;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.regis {
+  width: 100%;
+}
+
+.regis-container {
+  padding: 7rem 6rem 5.3rem 6rem;
+}
+
+/* ********** */
+/* GRID */
+/* ********* */
+.grid {
+  display: grid;
+}
+
+.grid--2-cols-login {
+  grid-template-columns: 1.5fr 1fr;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* ********** */
+/* HEADINGS */
+/* ********* */
+.primary-heading {
+  padding-bottom: 1rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #4070f4;
+}
+
+.secondary-heading {
+  color: #444;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 3rem 0 2.5rem 0;
+  position: relative;
+}
+
+.secondary-heading::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #265df2;
+  width: 6rem;
+  top: 2.8rem;
+  left: 0;
+}
+
+/* ********** */
+/* NAVIGATION */
+/* ********* */
+.nav-about,
+.nav-regis,
+.nav-notes,
+.nav-result {
+  scroll-behavior: smooth;
+}
+
+/* ********** */
+/* BUTTON */
+/* ********* */
+.btn {
+  display: inline-block;
+  color: #f9faff;
+  background-color: #2691d9;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  background-color: #0d72b6;
+}
+
+.btn-submit {
+  padding: 1rem 2.4rem;
+  margin-right: 2rem;
+}
+
+.btn-reset {
+  padding: 1rem 2.4rem;
+  color: #2691d9;
+  background-color: #f9faff;
+  box-shadow: 0 0 0 1px inset #2691d9;
+}
+
+.btn-reset:hover {
+  color: #f9faff;
+  background-color: #2691d9;
+  box-shadow: none;
+}
+
+/* ****************** */
+/* USABLE COMPONENTS */
+/* **************** */
+.hidden {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}

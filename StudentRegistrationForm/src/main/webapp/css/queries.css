@@ -1,0 +1,221 @@
+/* *************************** */
+/* BELOW 1230px (Landscape Tablets) */
+/* *************************** */
+@media (max-width: 76.87em) {
+  html {
+    font-size: 56.25%;
+  }
+  .login-field label {
+    font-size: 1.8rem;
+  }
+  .fields-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .notes {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+
+  .footer {
+    padding: 3rem 4rem;
+  }
+  .footer-about {
+    font-size: 1.6rem;
+  }
+}
+
+/* *************************** */
+/* BELOW 944px (Tablets) */
+/* *************************** */
+@media (max-width: 59em) {
+  html {
+    font-size: 46.75%;
+  }
+  .sticky .regis-nav {
+    padding: 0 6rem;
+  }
+
+  /* *************************** */
+  /* Mobile Navigation */
+  /* *************************** */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .regis-nav_field {
+    background-color: #265df2;
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    height: auto;
+    width: auto;
+
+    transform: translateX(100%);
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAV */
+    /* 1)Hide it visiually */
+    opacity: 0;
+    /* 2)Make it unacessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3)Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .regis-nav_field {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 3rem 4rem;
+    border: 1px solid #fff;
+    border-top: none;
+  }
+  .main-nav-link {
+    display: block;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* *************************** */
+/* BELOW 785px (Smaller Tablets) */
+/* *************************** */
+@media (max-width: 49em) {
+  html {
+    font-size: 43.75%;
+  }
+  .container-img {
+    display: none;
+  }
+  .container-login {
+    width: 100vw;
+    height: 100vh;
+  }
+  .login-center form {
+    padding: 0;
+  }
+  form .login-field {
+    margin: 5rem 0;
+  }
+  .regis-container {
+    padding: 7rem 6rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-des {
+    font-size: 1.7rem;
+    margin: 2rem;
+  }
+  .fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .notes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    padding: 3rem 5rem;
+    height: auto;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem 8rem;
+    justify-items: start;
+  }
+  .social-icon {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+  .logo-col {
+    grid-row: 2/3;
+    align-items: flex-start;
+  }
+}
+
+/* *************************** */
+/* BELOW 544px (Phones) */
+/* *************************** */
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+  .sticky .regis-nav {
+    padding: 0 3rem;
+  }
+  .login-center {
+    width: 33rem;
+  }
+  .regis-container {
+    padding: 6rem 3rem;
+  }
+  .main-nav-list {
+    gap: 3rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2rem;
+  }
+  .about-des {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  .unlist {
+    padding: 0 2rem 0 3rem;
+  }
+  .fields {
+    grid-template-columns: 1fr;
+  }
+  .input-field {
+    padding: 0rem 12rem 0 2rem;
+  }
+  .result-input {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .search-field {
+    padding: 0;
+  }
+  .search-field_notes {
+    padding: 0;
+  }
+  .result-btn {
+    margin-top: 2rem;
+  }
+  .notes {
+    grid-template-columns: 1fr;
+  }
+  .notes-box {
+    margin-right: 14rem;
+  }
+  .footer {
+    padding: 3rem 5rem;
+  }
+
+  .footer-grid {
+    gap: 5rem 2rem;
+    grid-template-columns: 1fr;
+  }
+  .footer-use {
+    grid-row: 1/2;
+  }
+  .logo-col {
+    grid-row: 4/5;
+  }
+}
